@@ -5,16 +5,17 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Webpages from "./pages/Webpages";
 
+
 export default function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/webpages" element={<Webpages />} />
-      </Routes>
-    </Router>
-  );
+return (
+<Router>
+<Navbar />
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/projects" element={<Projects />} />
+<Route path="/about" element={<About />} />
+<Route path="/webpages" element={<Webpages />} />
+</Routes>
+</Router>
+);
 }

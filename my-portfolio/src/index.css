@@ -2,3 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Neon Text Effect */
+.neon-text {
+color: #00f0ff;
+text-shadow:
+0 0 5px #00f0ff,
+0 0 10px #00f0ff,
+0 0 20px #00f0ff,
+0 0 40px #00f0ff;
+transition: all 0.3s ease-in-out;
+}
+
+
+/* Neon Card Glow */
+.neon-card {
+background-color: #0a0a0a;
+border: 1px solid #00f0ff;
+box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.neon-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff;
+}
+
+
+/* Sliding Animation */
+@keyframes slide-in {
+0% { opacity: 0; transform: translateY(20px); }
+100% { opacity: 1; transform: translateY(0); }
+}
+.slide-in {
+animation: slide-in 0.8s ease forwards;
+}
+
+
+/* Button Neon Hover */
+.btn-neon {
+padding: 0.5rem 1rem;
+border: 1px solid #00f0ff;
+color: #00f0ff;
+text-decoration: none;
+border-radius: 0.375rem;
+transition: 0.3s;
+}
+.btn-neon:hover {
+background-color: #00f0ff;
+color: #0a0a0a;
+box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
