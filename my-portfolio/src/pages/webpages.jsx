@@ -7,11 +7,11 @@ const pages = [
 
 
 return (
-<div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 bg-black min-h-screen">
+<div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
 {pages.map((page, i) => (
-<div key={i} className="neon-card p-4 rounded-lg slide-in">
-<h3 className="text-xl font-bold neon-text">{page.title}</h3>
-<a href={page.link} className="btn-neon">Visit</a>
+<div key={i} className="shadow-lg p-4 rounded-lg">
+<h3 className="text-xl font-bold">{page.title}</h3>
+<a href={page.link} className="text-blue-500 hover:underline">Visit</a>
 </div>
 ))}
 </div>
