@@ -7,12 +7,12 @@ const projects = [
 
 
 return (
-<div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 bg-black min-h-screen">
+<div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
 {projects.map((p, i) => (
-<div key={i} className="neon-card p-4 rounded-lg slide-in">
-<h3 className="text-xl font-bold neon-text">{p.title}</h3>
+<div key={i} className="shadow-lg p-4 rounded-lg">
+<h3 className="text-xl font-bold">{p.title}</h3>
 <p className="mb-2">{p.desc}</p>
-<a href={p.link} className="btn-neon">View Project</a>
+<a href={p.link} className="text-blue-500 hover:underline">View Project</a>
 </div>
 ))}
 </div>
